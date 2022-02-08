@@ -12,5 +12,5 @@ app.use(express.static(path.join(baseDir, 'frontend'), {
 }));
 
 app.listen(port, () => {
-  console.log(`cosc-4353 team-12 assignment-2 listening on port ${port}`)
+  console.log(`team-12 assignment-2 listening on port ${port}`)
 });
