@@ -31,7 +31,7 @@ cd assignment-2
 ```
 
 ### Step 3: Ensure that the `.env` file is present.
-<b>SKIP THIS STEP FOR NOW!</b>
+<b style="color:red">SKIP THIS STEP FOR NOW!</b>
 
 This project will not run unless the necessary environment variables are set. The necessary environment variables must be set via a `.env` file in the root directory (the same directory as this README file). 
 
