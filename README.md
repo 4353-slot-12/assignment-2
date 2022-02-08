@@ -1,4 +1,4 @@
-# Denise DeLovely Designs
+# COSC 4353, Team 12, Assignment 2
 
 ## Installation & Setup
 
@@ -21,26 +21,18 @@ cd path/to/file
 When you run the command below, you will create a folder (named "Team%206") containing the project in your desired directory.
 
 ```
-git clone https://SP22-COSC4397-T6@dev.azure.com/SP22-COSC4397-T6/Team%206/_git/Team%206
-```
-
-Let's rename the folder to something more relavent. 
-
-```
-# Windows
-ren Team%206 denise-delovely-designs
-
-# MacOS or Linux
-mv Team%206 denise-delovely-designs
+git clone https://github.com/4353-slot-12/assignment-2.git
 ```
 
 Next, let's navigate into the root directory of the project.
 
 ```
-cd denise-delovely-designs
+cd assignment-2
 ```
 
 ### Step 3: Ensure that the `.env` file is present.
+<b>SKIP THIS STEP FOR NOW!</b>
+
 This project will not run unless the necessary environment variables are set. The necessary environment variables must be set via a `.env` file in the root directory (the same directory as this README file). 
 
 You can obtain it by contacting the authors of this project.
@@ -59,4 +51,4 @@ At this point, we can check if we did everything correctly by starting the serve
 npm run start
 ```
 
-Finally, open your Google Chrome or Firefox and visit `http://localhost:8080`. You should see that the website loaded cleanly. Make sure to check the developer console to see if you're getting any errors.
+Finally, open your Google Chrome or Firefox and visit `http://localhost:8000`. You should see that the website loaded cleanly. Make sure to check the developer console to see if you're getting any errors.
