@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/index.js" defer></script>
+        <link rel="stylesheet" href="styles/index.css" />
+        <script src="scripts/index.js" defer></script>
+        <script src="scripts/feul_form.js" defer></script>
 
-    <!-- Remove before going to production -->
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>   
+        <!-- Remove before going to production -->
+        <script
+            type="text/javascript"
+            src="https://livejs.com/live.js"
+        ></script>
 
-    <title>COSC 4353 - Team 12 - Assignment 2</title>
-</head>
-<body>
-    <form action="/" method="POST">
-        
-    </form>
-</body>
+        <title>COSC 4353 - Team 12 - Assignment 2</title>
+    </head>
+
+    <body>
+        <form action="/" method="POST">
+            <div>
+                <label for="gallons-requested">Request Gallons:</label>
+                <input
+                    type="number"
+                    id="gallons-requested"
+                    name="gallons-requested"
+                    value="0"
+                    min="0"
+                />
+            </div>
+
+            <div>
+                <label for="delivery-date">Delivery Date: </label>
+                <input type="date" id="delivery-date" name="delivery-date" />
+            </div>
+
+            <div>
+                <h3>Delivery Address:</h3>
+                <p class="delivery-address">Loading...</p>
+            </div>
+        </form>
+    </body>
 </html>
