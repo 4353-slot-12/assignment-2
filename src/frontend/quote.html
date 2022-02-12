@@ -18,26 +18,31 @@
         <title>COSC 4353 - Team 12 - Assignment 2</title>
     </head>
     <body>
-        <header>
-            <div>
-                <img
-                    src="images/logo.svg"
-                    alt="fuel quoter logo"
-                    width="25"
-                    height="25"
-                />
-                Fuel Quoter
-            </div>
-            <nav>
-                <ul id="nav-authenticated-user">
-                    <li>Home</li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Get Quote</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div>
+            <img
+                src="images/logo.svg"
+                alt="fuel quoter logo"
+                width="25"
+                height="25"
+            />
+            Fuel Quoter
+        </div>
+        <nav>
+            <ul id="nav-anonymous-user">
+                <li>Home</li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+
+            <ul id="nav-authenticated-user">
+                <li>Home</li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Get Quote</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
 
         <section>
             <!-- Action POST to calculation endpoint -->
