@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- External resources -->
-    <!-- <link rel="stylesheet" href="styles/login.css"> -->
-    <!-- <script src="scripts/login.js" defer></script> -->
+        <!-- External resources -->
+        <!-- <link rel="stylesheet" href="styles/login.css"> -->
+        <!-- <script src="scripts/login.js" defer></script> -->
 
-    <title>Login</title>
-</head>
-<body>
-    <form action="/", method="POST">
-        <label for="username_field">Username:</label>
-        <input id="username_field" type="text", maxlength="50">
-        <br><br>
-        <label for="password_field">Password:</label>
-        <input id="password_field" type="password", maxlength="50">
-        <br><br>
-        <input type="submit", value = "Log In"> 
-    </form>
-    <br>
-    <a href="reg.html">Create a new account</a>
-    <br>
-    <br>
-    <text>link to homepage goes here</text> 
-</body>
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img
+                    src="images/logo.svg"
+                    alt="fuel quoter logo"
+                    width="25"
+                    height="25"
+                />
+                Fuel Quoter
+            </div>
+            <nav>
+                <ul id="nav-anonymous-user">
+                    <li>Home</li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+
+                <ul id="nav-authenticated-user">
+                    <li>Home</li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Get Quote</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form action="/" , method="POST">
+            <label for="username_field">Username:</label>
+            <input id="username_field" type="text" , maxlength="50" />
+            <br /><br />
+            <label for="password_field">Password:</label>
+            <input id="password_field" type="password" , maxlength="50" />
+            <br /><br />
+            <input type="submit" , value="Log In" />
+        </form>
+        <br />
+        <a href="reg.html">Create a new account</a>
+        <br />
+        <br />
+        <text>link to homepage goes here</text>
+    </body>
 </html>
