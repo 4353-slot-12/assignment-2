@@ -4,4 +4,3 @@
 
 // const callToAction = document.getElementById('call-to-action');
 // if (callToAction) callToAction.style.display = "none";
-

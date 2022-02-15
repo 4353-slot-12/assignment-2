@@ -1,0 +1,20 @@
+.loginBox {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBoxText {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px
+}
+
+.loginBoxButton {
+    display: flex;
+    justify-content: center;
+}
