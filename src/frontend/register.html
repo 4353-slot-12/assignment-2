@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- External resources -->
-        <link rel="stylesheet" href="styles/index.css" />
+        <!-- <link rel="stylesheet" href="styles/reg.css"> -->
         <script src="scripts/main.js" defer></script>
 
         <!-- Remove before going to production -->
@@ -15,7 +15,7 @@
             src="https://livejs.com/live.js"
         ></script>
 
-        <title>COSC 4353 - Team 12 - Assignment 2</title>
+        <title>Registration</title>
     </head>
     <body>
         <header>
@@ -30,13 +30,13 @@
             </div>
             <nav>
                 <ul id="nav-anonymous-user">
-                    <li>Home</li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/login">Login</a></li>
-                    <li><a href="/register">Register</a></li>
+                    <li>Register</li>
                 </ul>
 
                 <ul id="nav-authenticated-user">
-                    <li>Home</li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/profile">Profile</a></li>
                     <li><a href="/quote">Get Quote</a></li>
                     <li><a href="/history">History</a></li>
@@ -45,29 +45,25 @@
             </nav>
         </header>
 
-        <section>
-            <h1>Fuel Quoter</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque aliquam praesentium, ab voluptatem iste vitae
-                cupiditate? Quae ipsam vitae iure doloribus asperiores
-                aspernatur, nostrum inventore?
-            </p>
-            <div id="call-to-action">
-                <button id="primary-call-to-action">Register Today!</button>
-                <button id="secondary-call-to-action">Login</button>
-            </div>
-        </section>
-
-        <section>
-            <h2>Brought to you by...</h2>
-            <p>
-                The extrodinary Team 12 of Software Design course at University
-                of Houston. Jake Hidgon, Scott Tran, and Adil Iqbal worked
-                tirelessly to bring you a product that provides everlasting
-                business value at the fairest price possible... FREE!
-            </p>
-        </section>
+        <form action="/" , method="POST">
+            <label for="username_field">Username:</label>
+            <input id="username_field" type="text" , maxlength="50" />
+            <br /><br />
+            <label for="password_field">Password:</label>
+            <input id="password_field" type="password" , maxlength="50" />
+            <br /><br />
+            <label for="password_confirm_field">Confirm Password:</label>
+            <input
+                id="password_confirm_field"
+                type="password"
+                ,
+                maxlength="50"
+            />
+            <br /><br />
+            <input type="submit" , value="Register Your Account" />
+        </form>
+        <br />
+        <text>link to homepage goes here</text>
 
         <footer>
             Fuel Quoter is a non-profit service.<br />

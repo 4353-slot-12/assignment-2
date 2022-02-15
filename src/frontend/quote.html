@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- External resources -->
         <link rel="stylesheet" href="styles/index.css" />
         <script src="scripts/main.js" defer></script>
+        <script src="scripts/quote.js" defer></script>
 
         <!-- Remove before going to production -->
         <script
@@ -30,15 +30,15 @@
             </div>
             <nav>
                 <ul id="nav-anonymous-user">
-                    <li>Home</li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/login">Login</a></li>
                     <li><a href="/register">Register</a></li>
                 </ul>
 
                 <ul id="nav-authenticated-user">
-                    <li>Home</li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/profile">Profile</a></li>
-                    <li><a href="/quote">Get Quote</a></li>
+                    <li>Get Quote</li>
                     <li><a href="/history">History</a></li>
                     <li><a href="/logout">Logout</a></li>
                 </ul>
@@ -46,27 +46,50 @@
         </header>
 
         <section>
-            <h1>Fuel Quoter</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque aliquam praesentium, ab voluptatem iste vitae
-                cupiditate? Quae ipsam vitae iure doloribus asperiores
-                aspernatur, nostrum inventore?
-            </p>
-            <div id="call-to-action">
-                <button id="primary-call-to-action">Register Today!</button>
-                <button id="secondary-call-to-action">Login</button>
-            </div>
+            <!-- Action POST to calculation endpoint -->
+            <form action="/" method="POST">
+                <div>
+                    <label for="gallons-requested">Request Gallons:</label>
+                    <input
+                        type="number"
+                        id="gallons-requested"
+                        name="gallons-requested"
+                        value="0"
+                        min="0"
+                    />
+                </div>
+
+                <div>
+                    <label for="delivery-date">Delivery Date: </label>
+                    <input
+                        type="date"
+                        id="delivery-date"
+                        name="delivery-date"
+                    />
+                </div>
+
+                <input type="submit" value="Submit" />
+            </form>
         </section>
 
         <section>
-            <h2>Brought to you by...</h2>
-            <p>
-                The extrodinary Team 12 of Software Design course at University
-                of Houston. Jake Hidgon, Scott Tran, and Adil Iqbal worked
-                tirelessly to bring you a product that provides everlasting
-                business value at the fairest price possible... FREE!
-            </p>
+            <div>
+                <h3>Delivery Address:</h3>
+                <p class="delivery-address">Loading...</p>
+                <div>
+                    <!-- TODO: Link to Profile Editor -->
+                    <a href="#">Edit</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Price Estimates:</h3>
+                <p>
+                    Suggested Price (per Gallon):
+                    <span id="unit-price">$1.50</span>
+                </p>
+                <p>Total Price: <span id="total-price">$30.00</span></p>
+            </div>
         </section>
 
         <footer>
