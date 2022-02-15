@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- External resources -->
-        <!-- <link rel="stylesheet" href="styles/login.css"> -->
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/login.css">
         <script src="scripts/main.js" defer></script>
         <!-- <script src="scripts/login.js" defer></script> -->
 
@@ -20,46 +21,47 @@
     </head>
     <body>
         <header>
-            <div>
-                <img
-                    src="images/logo.svg"
-                    alt="fuel quoter logo"
-                    width="25"
-                    height="25"
-                />
-                Fuel Quoter
-            </div>
-            <nav>
+            <div class="header1">
+                <div class="header1_1">
+                    <img class="icon"
+                        src="images/logo.svg"
+                        alt="fuel quoter logo"
+                        width="25"
+                        height="25"
+                    />
+                    <div>Fuel Quoter</div>
+                </div>
                 <ul id="nav-anonymous-user">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li>Login</li>
-                    <li><a href="/register">Register</a></li>
+                    <li><a href="register.html">Register</a></li>
                 </ul>
-
+            </div>
+            <div class="header2">
                 <ul id="nav-authenticated-user">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/profile">Profile</a></li>
-                    <li><a href="/quote">Get Quote</a></li>
-                    <li><a href="/history">History</a></li>
-                    <li><a href="/logout">Logout</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="quote.html">Get Quote</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="logout.html">Logout</a></li>
                 </ul>
-            </nav>
+            </div>
         </header>
 
-        <form action="/" , method="POST">
-            <label for="username_field">Username:</label>
-            <input id="username_field" type="text" , maxlength="50" />
-            <br /><br />
-            <label for="password_field">Password:</label>
-            <input id="password_field" type="password" , maxlength="50" />
-            <br /><br />
-            <input type="submit" , value="Log In" />
-        </form>
-        <br />
-        <a href="register.html">Create a new account</a>
-        <br />
-        <br />
-        <text>link to homepage goes here</text>
+        <section>
+            <form action="/" , method="POST">
+                <label for="username_field">Username:</label>
+                <input id="username_field" type="text" , maxlength="50" />
+                <br /><br />
+                <label for="password_field">Password:</label>
+                <input id="password_field" type="password" , maxlength="50" />
+                <br /><br />
+                <input type="submit" , value="Log In" />
+            </form>
+            <div>
+                <a href="register.html">Create a new account</a>
+            </div>
+        </section>
 
         <footer>
             Fuel Quoter is a non-profit service.<br />
