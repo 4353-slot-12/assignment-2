@@ -52,27 +52,27 @@
         <h1>Profile Management</h1>
 
         <form action="/", method="POST">
-            <label for="name_field">Full Name:</label>
+            <label for="name_field" class="required">Full Name:</label>
             <input id="name_field" type="text", maxlength="50" required></input> 
-            <text style="COLOR:RED">*</text>
 
-            <br><br>
-            <label for="addr1_field">Address Line 1:</label>
+
+
+            <label for="addr1_field" class="required">Address Line 1:</label>
             <input id="addr1_field" type="text", maxlength="100" required></input> 
-            <text style="color:RED">*</text>
 
-            <br><br>
-            <label for="addr2_field">Address Line 2: </label>
+
+
+            <label for="addr2_field" class="required">Address Line 2: </label>
             <input id="addr2_field" type="text", maxlength="100" required></input>
 
-            <br><br>
-            <label for="city_field">City:</label>
+
+            <label for="city_field" class="required">City:</label>
             <input id="city_field", type="text", maxlength="100" required></input> 
-            <text style="COLOR:RED">*</text>
+
 
             <!-- Taken from open source snippet at https://lab.artlung.com/50states/-->
-            <br><br>
-            <label for="state_sel">State:</label>
+
+            <label for="state_sel" class="required">State:</label>
             <select id="state_sel">
                 <option value="">-- Select --</option>
                 <option value="AL">Alabama</option>
@@ -127,14 +127,12 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select> 
-            <text style="COLOR:RED">*</text>
 
-            <br><br>
-            <label for="zip_field">Zip Code:</label>
+
+            <label for="zip_field" class="required">Zip Code:</label>
             <input id="zip_field" type="text" maxlength="9" required></input> 
-            <text style="COLOR:RED">*</text>
 
-            <br><br>
+
             <input type="submit" value="Save Changes">
         </form>
     </section>
