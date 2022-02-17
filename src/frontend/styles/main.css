@@ -12,6 +12,10 @@
     --secondary-font: "Source Sans Pro", sans-serif;
 }
 
+body {
+    margin: 0px;
+}
+
 /* Typography */
 
 h1,
@@ -34,6 +38,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 30px;
 }
 
 ul {
@@ -76,6 +81,9 @@ footer {
     font-size: 15px;
     padding: 12px;
     margin-top: 50px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
 }
 
 footer span {
