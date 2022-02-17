@@ -1,0 +1,17 @@
+.registerBox {
+    padding: 80px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerBox_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerBoxText {
+    padding: 20px;
+}
