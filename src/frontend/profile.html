@@ -51,29 +51,21 @@
     <section>
         <h1>Profile Management</h1>
 
-        <form action="/", method="POST">
-            <label for="name_field" class="required">Full Name:</label>
-            <input id="name_field" type="text", maxlength="50" required></input> 
+        <form action="/api/profile", method="POST">
+            <label for="name" class="required">Full Name:</label>
+            <input id="name" name="name" type="text", maxlength="50" required></input> 
 
+            <label for="address1" class="required">Address Line 1:</label>
+            <input id="address1" name="address1" type="text", maxlength="100" required></input> 
 
+            <label for="address2">Address Line 2: </label>
+            <input id="address2" name="address2" type="text", maxlength="100"></input>
 
-            <label for="addr1_field" class="required">Address Line 1:</label>
-            <input id="addr1_field" type="text", maxlength="100" required></input> 
+            <label for="city" class="required">City:</label>
+            <input id="city" name="city" type="text" maxlength="100" required></input> 
 
-
-
-            <label for="addr2_field" class="required">Address Line 2: </label>
-            <input id="addr2_field" type="text", maxlength="100" required></input>
-
-
-            <label for="city_field" class="required">City:</label>
-            <input id="city_field", type="text", maxlength="100" required></input> 
-
-
-            <!-- Taken from open source snippet at https://lab.artlung.com/50states/-->
-
-            <label for="state_sel" class="required">State:</label>
-            <select id="state_sel">
+            <label for="state" class="required">State:</label>
+            <select id="state" name="state">
                 <option value="">-- Select --</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -127,12 +119,8 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select> 
-
-
-            <label for="zip_field" class="required">Zip Code:</label>
-            <input id="zip_field" type="text" maxlength="9" required></input> 
-
-
+            <label for="zip" class="required">Zip Code:</label>
+            <input id="zip" name="zip" type="text" pattern="(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)" minlength="5" maxlength="10" required></input> 
             <input type="submit" value="Save Changes">
         </form>
     </section>
