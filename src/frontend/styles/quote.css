@@ -36,7 +36,6 @@ input[type="submit"]:hover {
 }
 
 .output-container {
-    background-color: var(--white);
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
