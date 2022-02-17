@@ -7,9 +7,9 @@
 
         <!-- External resources -->
         <link rel="stylesheet" href="styles/main.css"/>
-        <link rel="stylesheet" href="styles/register.css">
+        <link rel="stylesheet" href="styles/form.css">
         <script src="scripts/main.js" defer></script>
-        <!-- <script src="scripts/register.js" defer></script> -->
+        <script src="scripts/register.js" defer></script>
 
         <!-- Remove before going to production -->
         <script
@@ -48,25 +48,25 @@
             </div>
         </header>
 
-        <form action="/" , method="POST">
-            <label for="username_field">Username:</label>
-            <input id="username_field" type="text" , maxlength="50" />
-            <br /><br />
-            <label for="password_field">Password:</label>
-            <input id="password_field" type="password" , maxlength="50" />
-            <br /><br />
-            <label for="password_confirm_field">Confirm Password:</label>
-            <input
-                id="password_confirm_field"
-                type="password"
-                ,
-                maxlength="50"
-            />
-            <br /><br />
-            <input type="submit" , value="Register Your Account" />
-        </form>
-        <br />
-        <text>link to homepage goes here</text>
+        <section>    
+            <form action="/api/create_account" method="POST" onsubmit="return handleSubmit();">
+                <label for="username">Username:</label>
+                <input id="username" name="username" type="text" maxlength="50" />
+
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password" maxlength="50" />
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input
+                    id="confirm-password"
+                    name="confirm-password"
+                    type="password"
+                    maxlength="50"
+                />
+
+                <input type="submit" value="Register Your Account" />
+            </form>
+    </section>
 
         <footer>
             Fuel Quoter is a non-profit service.<br />
