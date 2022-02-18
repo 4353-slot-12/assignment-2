@@ -13,7 +13,7 @@
         crossorigin="anonymous"
         defer
     ></script>
-    
+
     <script src="scripts/main.js" defer></script>
     <script src="scripts/profile.js" defer></script>
 
@@ -34,21 +34,11 @@
             <a href="login">Login</a>
             <a href="register">Register</a>
         </nav>
-        <nav id="nav-authenticated-user">
-            <div class="brand">
-                <i class="brand-icon fa-solid fa-gas-pump"></i>Fuel Quoter
-            </div>
-            <a href="logout">Logout</a>
-            <a href="history">History</a>
-            <a href="quote">Get Quote</a>
-            <a href="#" class="active">Profile</a>
-            <a href="/">Home</a>
-        </nav>
     </header>
 
     <div class="container">
         <section>
-            <h1 class="center">Profile Management</h1>
+            <h1 class="center">Profile Creation</h1>
 
             <form action="/api/profile", method="POST">
                 <label for="name" class="required">Full Name:</label>
@@ -120,7 +110,7 @@
                 </select> 
                 <label for="zip" class="required">Zip Code:</label>
                 <input id="zip" name="zip" type="text" pattern="(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)" minlength="5" maxlength="10" required></input> 
-                <input type="submit" value="Save Changes">
+                <input type="submit" value="Create Profile">
             </form>
         </section>
     </div>
