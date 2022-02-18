@@ -3,7 +3,7 @@ import { Router } from 'express';
 const router = Router();
 
 router.post('/account', (req, res) => {
-    res.status(201).redirect('/profile');
+    res.status(201).redirect('/proto-profile');
 });
 
 router.post('/profile', (req, res) => {

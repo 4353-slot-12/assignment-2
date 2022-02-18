@@ -16,6 +16,11 @@ body {
     margin: 0px;
 }
 
+div.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
 /* Typography */
 
 h1,
@@ -71,7 +76,8 @@ ul {
     gap: 24px;
 }
 
-/* footer */
+/* Footer */
+
 footer {
     display: block;
     background-color: var(--light);
@@ -93,4 +99,33 @@ footer span {
 section {
     margin-right: 30px;
     margin-left: 30px;
+}
+
+/* Utility */
+
+.center {
+    text-align: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -300%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
 }

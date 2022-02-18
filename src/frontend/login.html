@@ -7,7 +7,7 @@
 
         <!-- External resources -->
         <link rel="stylesheet" href="styles/main.css" />
-        <link rel="stylesheet" href="styles/login.css">
+        <link rel="stylesheet" href="styles/form.css" />
         <script src="scripts/main.js" defer></script>
         <!-- <script src="scripts/login.js" defer></script> -->
 
@@ -23,7 +23,8 @@
         <header>
             <div class="header1">
                 <div class="header1_1">
-                    <img class="icon"
+                    <img
+                        class="icon"
                         src="images/logo.svg"
                         alt="fuel quoter logo"
                         width="25"
@@ -32,36 +33,43 @@
                     <div>Fuel Quoter</div>
                 </div>
                 <ul id="nav-anonymous-user">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index">Home</a></li>
                     <li>Login</li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="register">Register</a></li>
                 </ul>
             </div>
             <div class="header2">
                 <ul id="nav-authenticated-user">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="quote.html">Get Quote</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="logout.html">Logout</a></li>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="profile">Profile</a></li>
+                    <li><a href="quote">Get Quote</a></li>
+                    <li><a href="history">History</a></li>
+                    <li><a href="logout">Logout</a></li>
                 </ul>
             </div>
         </header>
 
-        <section>
-            <form action="/" , method="POST">
-                <label for="username_field">Username:</label>
-                <input id="username_field" type="text" , maxlength="50" />
-                <br /><br />
-                <label for="password_field">Password:</label>
-                <input id="password_field" type="password" , maxlength="50" />
-                <br /><br />
-                <input type="submit" , value="Log In" />
-            </form>
-            <div>
-                <a href="register.html">Create a new account</a>
-            </div>
-        </section>
+        <div class="container">
+            <section>
+                <form action="/" , method="POST">
+                    <label for="username_field">Username:</label>
+                    <input id="username_field" type="text" , maxlength="50" />
+                    <br /><br />
+                    <label for="password_field">Password:</label>
+                    <input
+                        id="password_field"
+                        type="password"
+                        ,
+                        maxlength="50"
+                    />
+                    <br /><br />
+                    <input type="submit" , value="Log In" />
+                </form>
+                <div class="center">
+                    <a href="register">Create a new account</a>
+                </div>
+            </section>
+        </div>
 
         <footer>
             Fuel Quoter is a non-profit service.<br />

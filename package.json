@@ -1,17 +1,17 @@
 {
-  "name": "denise-delovely-designs",
+  "name": "cosc4353-team-12-assignment-2",
   "version": "1.0.0",
   "description": "website for denise delovely designs, by team 6",
   "main": "backend/index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --experimental-specifier-resolution=node src/backend/index.js"
+    "start": "nodemon src/backend/index.js"
   },
   "repository": {
     "type": "git",
     "url": "https://SP22-COSC4397-T6@dev.azure.com/SP22-COSC4397-T6/Team%206/_git/Team%206"
   },
-  "author": "Adil Iqbal, Mark Le, William Moffatt",
+  "author": "Adil Iqbal, Scott Tran, Jacob Hidgon",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "dotenv": "^16.0.0",

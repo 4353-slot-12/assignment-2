@@ -1,6 +1,6 @@
 const validZipCodeRegex = /(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)/;
 const validStateRegex = /^(?-i:A[LKSZRAEP]|C[AOT]|D[EC]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHINOPST]|N[CDEHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY])$/;
-
+const accessDeniedMessage = "You'll be able to access this feature once you have submitted the form below.";
 
 function handleSubmit() {
     const name = document.getElementById("name");
@@ -29,5 +29,10 @@ function handleSubmit() {
     if (!cityExists) city.focus();
     if (!stateValid) state.focus();
 
+    return false;
+}
+
+function accessDenied() {
+    alert("You'll be able to access this feature once you have submitted the form below.");
     return false;
 }

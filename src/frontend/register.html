@@ -19,6 +19,7 @@
 
         <title>Registration</title>
     </head>
+
     <body>
         <header>
             <div class="header1">
@@ -33,55 +34,57 @@
                     <div>Fuel Quoter</div>
                 </div>
                 <ul id="nav-anonymous-user">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="login">Login</a></li>
                     <li>Register</li>
                 </ul>
             </div>
             <div class="header2">
                 <ul id="nav-authenticated-user">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="quote.html">Get Quote</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="logout.html">Logout</a></li>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="profile">Profile</a></li>
+                    <li><a href="quote">Get Quote</a></li>
+                    <li><a href="history">History</a></li>
+                    <li><a href="logout">Logout</a></li>
                 </ul>
             </div>
         </header>
 
-        <section>
-            <form
-                action="/api/create_account"
-                method="POST"
-                onsubmit="return handleSubmit();"
-            >
-                <label for="username">Username:</label>
-                <input
-                    id="username"
-                    name="username"
-                    type="text"
-                    maxlength="50"
-                />
+        <div class="container">
+            <section>
+                <form
+                    action="/api/account"
+                    method="POST"
+                    onsubmit="return handleSubmit();"
+                >
+                    <label for="username">Username:</label>
+                    <input
+                        id="username"
+                        name="username"
+                        type="text"
+                        maxlength="50"
+                    />
 
-                <label for="password">Password:</label>
-                <input
-                    id="password"
-                    name="password"
-                    type="password"
-                    maxlength="50"
-                />
+                    <label for="password">Password:</label>
+                    <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        maxlength="50"
+                    />
 
-                <label for="confirm-password">Confirm Password:</label>
-                <input
-                    id="confirm-password"
-                    name="confirm-password"
-                    type="password"
-                    maxlength="50"
-                />
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input
+                        id="confirm-password"
+                        name="confirm-password"
+                        type="password"
+                        maxlength="50"
+                    />
 
-                <input type="submit" value="Register Your Account" />
-            </form>
-        </section>
+                    <input type="submit" value="Register Your Account" />
+                </form>
+            </section>
+        </div>
 
         <footer>
             Fuel Quoter is a non-profit service.<br />
