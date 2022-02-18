@@ -10,8 +10,8 @@ router.post('/profile', (req, res) => {
     res.status(201).redirect('/quote');
 })
 
-router.post('/logout', (req, res) => {
-    res.status(201).redirect('/');
+router.get('/logout', (req, res) => {
+    res.status(201).redirect('/login');
 })
 
 export default router;
