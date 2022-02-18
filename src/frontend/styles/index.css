@@ -24,3 +24,7 @@ button:hover {
     color: var(--white);
     text-decoration: none;
 }
+
+.fine-print {
+    font-size: 9pt;
+}
