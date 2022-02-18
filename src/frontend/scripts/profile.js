@@ -23,11 +23,14 @@ function handleSubmit() {
 
     if (nameExists && addressExists && cityExists && stateValid && zipCodeValid) return true;
 
-    if (!nameExists) name.focus();
-    if (!addressExists) address1.focus();
-    if (!zipCodeValid) zip.focus();
-    if (!cityExists) city.focus();
-    if (!stateValid) state.focus();
+    if (!stateValid) {
+        state.setCustomValidity('Please select a State.');
+        state.focus();
+    }
+    else if (!zipCodeValid) {
+        zip.setCustomValidity('Please enter a valid 5-digit zip code.');
+        zip.focus();
+    }
 
     return false;
 }
