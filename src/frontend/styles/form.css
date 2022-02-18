@@ -2,8 +2,11 @@ form {
     max-width: 800px;
 }
 
+input[type="text"],
 input[type="number"],
-input[type="date"] {
+input[type="password"],
+input[type="date"],
+select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -28,16 +31,9 @@ input[type="submit"]:hover {
     background-color: var(--dark);
 }
 
-.output {
-    font-size: 25px;
-    color: var(--darkest);
-    font-weight: 900;
-    margin-left: 10px;
-}
-
-.output-container {
-    background-color: var(--white);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
+.required:after {
+    display: inline;
+    content: " *";
+    color: red;
+    font-size: 16pt;
 }
