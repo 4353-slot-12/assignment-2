@@ -8,6 +8,11 @@
         <!-- External resources -->
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/index.css" />
+        <script
+            src="https://kit.fontawesome.com/c77bafb584.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
         <script src="scripts/main.js" defer></script>
         <!-- <script src="scripts/index.js" defer></script> -->
 
@@ -21,29 +26,22 @@
     </head>
     <body>
         <header>
-            <div>
-                <img
-                    src="images/logo.svg"
-                    alt="fuel quoter logo"
-                    width="25"
-                    height="25"
-                />
-                Fuel Quoter
-            </div>
-            <nav>
-                <ul id="nav-anonymous-user">
-                    <li>Home</li>
-                    <li><a href="login">Login</a></li>
-                    <li><a href="register">Register</a></li>
-                </ul>
-
-                <ul id="nav-authenticated-user">
-                    <li>Home</li>
-                    <li><a href="profile">Profile</a></li>
-                    <li><a href="quote">Get Quote</a></li>
-                    <li><a href="history">History</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
+            <nav id="nav-anonymous-user">
+                <div class="brand">
+                    <i class="brand-icon fa-solid fa-gas-pump"></i>Fuel Quoter
+                </div>
+                <a href="login">Login</a>
+                <a href="register">Register</a>
+            </nav>
+            <nav id="nav-authenticated-user">
+                <div class="brand">
+                    <i class="brand-icon fa-solid fa-gas-pump"></i>Fuel Quoter
+                </div>
+                <a href="logout">Logout</a>
+                <a href="history">History</a>
+                <a href="quote">Get Quote</a>
+                <a href="profile">Profile</a>
+                <a href="#" class="active">Home</a>
             </nav>
         </header>
 
@@ -51,10 +49,13 @@
             <section>
                 <h1>Fuel Quoter</h1>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque aliquam praesentium, ab voluptatem iste vitae
-                    cupiditate? Quae ipsam vitae iure doloribus asperiores
-                    aspernatur, nostrum inventore?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Autem quae maiores dolore harum delectus! Harum modi
+                    voluptatum numquam, quod voluptate tempore. Impedit culpa
+                    tempore consequuntur! Facilis illum ducimus eius? Aut, optio
+                    quia ratione libero sunt ex odit ullam officia nam debitis
+                    nostrum repudiandae reprehenderit impedit rem pariatur
+                    perspiciatis saepe quidem.
                 </p>
                 <div id="call-to-action">
                     <button

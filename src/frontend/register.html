@@ -8,6 +8,12 @@
         <!-- External resources -->
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/form.css" />
+
+        <script
+            src="https://kit.fontawesome.com/c77bafb584.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
         <script src="scripts/main.js" defer></script>
         <script src="scripts/register.js" defer></script>
 
@@ -22,32 +28,23 @@
 
     <body>
         <header>
-            <div class="header1">
-                <div class="header1_1">
-                    <img
-                        class="icon"
-                        src="images/logo.svg"
-                        alt="fuel quoter logo"
-                        width="25"
-                        height="25"
-                    />
-                    <div>Fuel Quoter</div>
+            <nav id="nav-anonymous-user">
+                <div class="brand">
+                    <i class="brand-icon fa-solid fa-gas-pump"></i>Fuel Quoter
                 </div>
-                <ul id="nav-anonymous-user">
-                    <li><a href="index">Home</a></li>
-                    <li><a href="login">Login</a></li>
-                    <li>Register</li>
-                </ul>
-            </div>
-            <div class="header2">
-                <ul id="nav-authenticated-user">
-                    <li><a href="index">Home</a></li>
-                    <li><a href="profile">Profile</a></li>
-                    <li><a href="quote">Get Quote</a></li>
-                    <li><a href="history">History</a></li>
-                    <li><a href="logout">Logout</a></li>
-                </ul>
-            </div>
+                <a href="login">Login</a>
+                <a href="#" class="active">Register</a>
+            </nav>
+            <nav id="nav-authenticated-user">
+                <div class="brand">
+                    <i class="brand-icon fa-solid fa-gas-pump"></i>Fuel Quoter
+                </div>
+                <a href="logout">Logout</a>
+                <a href="history">History</a>
+                <a href="quote">Get Quote</a>
+                <a href="profile">Profile</a>
+                <a href="/">Home</a>
+            </nav>
         </header>
 
         <div class="container">
