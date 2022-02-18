@@ -112,7 +112,7 @@
                     <option value="WY">Wyoming</option>
                 </select> 
                 <label for="zip" class="required">Zip Code:</label>
-                <input id="zip" name="zip" type="text" pattern="(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)" minlength="5" maxlength="10" required></input> 
+                <input id="zip" name="zip" type="text" pattern="^\d{5}$" minlength="5" maxlength="5" placeholder="12345" required></input> 
                 <input type="submit" value="Save Changes">
             </form>
         </section>
